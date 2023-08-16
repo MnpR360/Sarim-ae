@@ -9,7 +9,7 @@ using uPLibrary.Networking.M2Mqtt;
 public class UGVMQTT : MonoBehaviour
 {
 
-    public TextMeshProUGUI currentPos;
+    //public TextMeshProUGUI currentPos;
 
     public ClientM2 clientClass;
 
@@ -21,7 +21,7 @@ public class UGVMQTT : MonoBehaviour
     public bool isEncrypted = true;
     //--------------------------------------------------
 
-    public Robot robot1 = new Robot(1, "dawood", "Active", 1.0f, 25.054485321044923f, 55.38414001464844f, 90);
+    public Robot robot1 = new Robot(20, "A", "Active", 1.0f, 25.054485321044923f, 55.38414001464844f, 90);
 
 
 
@@ -112,7 +112,8 @@ public class UGVMQTT : MonoBehaviour
                 Vector2 lonLat = converter.ConvertXZToLonLat(xyCoordinates);
 
                 robot1.UpdatePos(lonLat, transform.eulerAngles.y);
-                currentPos.text = robot1.GetLatitude() + " " + robot1.GetLongitude();  
+                Debug.Log(robot1);
+               // currentPos.text = robot1.GetLatitude() + " " + robot1.GetLongitude();  
                //Debug.Log(robot1.ToJson());
 
 

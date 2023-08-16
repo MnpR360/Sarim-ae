@@ -16,7 +16,8 @@ public static class Environment_Struct
     [System.Serializable]
     public struct Mission
     {
-        public string id;
+        public  string id;
+        public string name;
         public Waypoint[] waypoints;
         
     }
@@ -26,6 +27,16 @@ public static class Environment_Struct
     {
         public float lat;
         public float lng;
+        public Robot[] robots;
+
+    }
+
+    [System.Serializable]
+    public struct Robot
+    {
+        public string id;
+        public string name;
+
     }
 
 
