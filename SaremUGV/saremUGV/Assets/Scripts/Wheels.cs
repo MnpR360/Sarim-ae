@@ -18,7 +18,7 @@ public class Wheels : MonoBehaviour
     public float motorForce = 1000f;
     public float speedLimit = 10.0f;
     public float maxSteerAngle = 30f;
-    public float differentialFactor = 0.5f; // Adjust this value to control differential steering
+    public float differentialFactor = 0.5f; // Adjust this value to control differential steering1
     public float rotatePower = 2f;
 
     // Flag to control user input
