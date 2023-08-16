@@ -12,6 +12,7 @@ public class Robot
     public int index = 0;
 
 
+
     public Environment_Struct.Mission currentMission;
 
 
